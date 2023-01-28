@@ -1,0 +1,7 @@
+@import 'vars'; //переменные для цвета для шрифта
+@import 'fonts'; // подключение шрифтов
+@import 'reset'; //сброс всех стилей
+@import 'global';
+@import 'libs'; // адаптив
+@import 'components/header'; // адаптив
+@import 'components/footer'; // адаптив

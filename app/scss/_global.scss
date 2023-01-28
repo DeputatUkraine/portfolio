@@ -1,0 +1,88 @@
+@import 'mixins';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: 'Inter';
+  color: #000;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+a,
+button {
+  outline: transparent;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.title {
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  // margin: 0 auto;
+  // width: 200px;
+  // display: block;
+  position: relative;
+  padding: 0 20px;
+  font-family: 'Merriweather';
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #BDAE82;
+  z-index: 10;
+  
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+}
+
+.line {
+  width: 100%;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 2px;
+  background-color: #BDAE82;
+  z-index: -1; 
+}
+
+.link {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 123px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}

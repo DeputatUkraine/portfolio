@@ -1,0 +1,43 @@
+@import '../../scss/vars';
+.header {
+  background-color: #000;
+
+  &__inner {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    margin-right: 30px;
+    font-size: 20px;
+    display: flex;
+    
+    &__link {
+      color: #fff;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .lang {
+    color: #fff;
+    &__item {
+      cursor:pointer;
+
+      &.active {
+        color: $activeColor;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    align-items: center;
+  }
+}
