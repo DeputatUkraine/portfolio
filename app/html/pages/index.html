@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-  <title>Vadim Forever</title>
-  <link rel="stylesheet" href="css/style.min.css?=v1.0">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <title>Vadim Forever</title>
+    <link rel="stylesheet" href="css/style.min.css?=v1.0">
+  </head>
 
-<body>
+  <body>
+    @@include('../components/_header.html')
 
-  @@include('../components/_header.html')
+    <div class="main">
+      <section class="top" style="background-image: url('../../assets/images/top/bg.jpg')">
+        <div class="container">
+          <div class="top__inner">
+            <div class="top__block">
+              <div class="top__title">
+                Alexa Rise
+              </div>
+              <div class="top__description">
+                Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
+              </div>
+              @@include('../components/_link.html', {"link": "https://api-cakerhq.codicadev.net/admin", "text": "Hire me", "bgColor": "gold"})
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- <div class="wrapper"> -->
+      <section class="skills">
+        <div class="container">
+          <div class="skills__inner">
+            @@include('../components/_title.html', {"text": "Skills"})
+          </div>
+        </div>
+      </section>
+    <!-- </div> -->
+    <section class="skills">
+        <div class="container">
+          <div class="skills__inner">
+            @@include('../components/_title.html',  {"text": "Portfolio"})
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <main class="main">
+    <!-- @@include('../components/_footer.html') -->
 
-  <section>
-    <div class="title">
-      <span class="text">Skills</span>
-      <span class="line"></span>
-    </div> 
-    <div>sdfdsfsdfsdf</div>
-  </section>
-
-  </main>
-
-  <!-- @@include('../components/_footer.html') -->
-
-  <script src="js/main.min.js"></script>
-
-</body>
-
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

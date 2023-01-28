@@ -1,0 +1,18 @@
+.top {
+  &__link {
+    background-color: #fff;
+    font-size: 20px;
+    color: #BDAE82;
+    border: 2px solid #BDAE82;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 220px;
+
+    &.gold {
+      background-color: #BDAE82;
+      color: #fff;
+    }
+  }
+}
