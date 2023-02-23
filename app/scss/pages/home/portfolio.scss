@@ -1,0 +1,29 @@
+.portfolio {
+    .title {
+        margin-bottom: 80px;
+    }
+
+    &__headline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        .top__link {
+            &:not(:last-child) {
+                margin-right: 5px; 
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: -25px;
+        
+    }
+    &__image {
+        margin-bottom: 25px;
+        margin-right: 25px;
+    }
+}

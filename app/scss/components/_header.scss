@@ -1,8 +1,9 @@
 @import '../../scss/vars';
 .header {
   // background-color: #000;
-  position: fixed;
+  position: relative;
   width: calc(100%);
+  margin-bottom: -90px;
 
   &__inner {
     padding: 25px 0;
