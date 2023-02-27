@@ -1,12 +1,13 @@
-@import 'vars'; //переменные для цвета для шрифта
-@import 'fonts'; // подключение шрифтов
-@import 'reset'; //сброс всех стилей
+@import 'vars'; 
+@import 'fonts'; 
+@import 'reset'; 
 @import 'global';
-@import 'libs'; // адаптив
-@import 'components/header'; // адаптив
-@import 'components/footer'; // адаптив
-@import 'pages/home/top.scss'; // адаптив
-@import 'pages/home/skills.scss'; // адаптив
-@import 'pages/home/portfolio.scss'; // адаптив
-@import 'components/_link.scss'; // адаптив
+@import 'libs'; 
+@import 'components/header';
+@import 'components/footer';
+@import 'pages/home/top.scss'; 
+@import 'pages/home/skills.scss';
+@import 'pages/home/portfolio.scss';
+@import 'pages/home/video.scss';
+@import 'components/_link.scss'; 
 
